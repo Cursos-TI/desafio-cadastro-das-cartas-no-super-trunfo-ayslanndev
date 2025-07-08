@@ -1,0 +1,49 @@
+#include <stdio.h>
+ 
+int main() {
+    int populacao, pontos;
+    float area, pib; 
+
+    int populacao2, pontos2;
+    float area2, pib2; 
+
+    printf("Desafio Supertrunfo\n\n");
+ 
+    printf("Dados da Carta 1\n");
+    printf("Digite o numero estimado da populacao: ");
+    scanf("%d", &populacao);
+
+    printf("Digite o tamanho estimado da area: ");
+    scanf("%f", &area);
+
+    printf("Digite a estimativa do PIB: ");
+    scanf("%f", &pib);
+  
+    printf("Digite o numero de pontos: ");
+    scanf("%d", &pontos);
+    printf("\n");
+
+
+    printf("Fim da Carta 1\n\n");
+
+
+    printf("Dados Carta 2\n");
+    printf("Digite o numero estimado da populacao: ");
+    scanf("%d", &populacao2);
+
+    printf("Digite o tamanho estimado da area: ");
+    scanf("%f", &area2);
+ 
+    printf("Digite a estimativa do PIB: ");
+    scanf("%f", &pib2);
+  
+    printf("Digite o numero de pontos: ");
+    scanf("%d", &pontos2);
+    printf("\n");
+
+    printf("Fim da Carta 2, Obrigado!\n\n"); 
+
+    return 0;
+}
+
+ 

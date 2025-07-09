@@ -45,18 +45,18 @@ int main() {
 
     printf("Conferencia das Cartas\n\n");
  
-     printf("Populacao Carta 1:  %d\n",  populacao);
-      printf("Populacao Carta 2:  %d\n\n",  populacao2);
-      printf("Area Carta 1:  %.3f\n",  area);
-        printf("Area Carta 2:  %.3f\n\n", area2);
+    printf("Populacao Carta 1:  %d\n",  populacao);
+    printf("Populacao Carta 2:  %d\n\n",  populacao2);
+    printf("Area Carta 1:  %.3f\n",  area);
+    printf("Area Carta 2:  %.3f\n\n", area2);
 
     printf("Estimativa do Pib da Carta 1:  %.2f\n", pib);
-     printf("Estimativa do Pib da Carta 2:  %.2f\n\n",  pib2);
-      printf("Total de Pontos Turisticos Carta 1: %d\n",  pontos);
-        printf("Total de Pontos Turisticos Carta 2: %d\n\n",  pontos2);
+    printf("Estimativa do Pib da Carta 2:  %.2f\n\n",  pib2);
+    printf("Total de Pontos Turisticos Carta 1: %d\n",  pontos);
+    printf("Total de Pontos Turisticos Carta 2: %d\n\n",  pontos2);
 
 
-        printf("Fim da Conferencia das Cartas, Obrigado!\n\n"); 
+    printf("Fim da Conferencia das Cartas, Obrigado!\n\n"); 
 
   
     return 0; 

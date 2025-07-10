@@ -1,0 +1,91 @@
+#include <stdio.h>
+ 
+int main() {
+    int  pontos, vitoriapopulacao, vitoriapontos, vitoriaarea,  vitoriapib, vitoriapibcap,  vitoriadensidade, vitoriasuper;
+    float area, pibcap ,pib,  densidade, superpoder; 
+
+    int  pontos2;
+    float area2, pibcap2 ,pib2,  densidade2, superpoder2; 
+
+    unsigned long int populacao, populacao2; 
+
+    printf("Desafio Supertrunfo\n\n");
+ 
+    printf("Dados da Carta 1\n");
+    printf("Digite o numero estimado da populacao: ");
+    scanf("%lu", &populacao);
+
+    printf("Digite o tamanho estimado da area em km2: ");
+    scanf("%f", &area);
+
+    printf("Digite a estimativa do PIB: ");
+    scanf("%f", &pib);
+  
+    printf("Digite o numero de pontos turisticos: ");
+    scanf("%d", &pontos);                                               
+    printf("\n");
+
+    printf("Fim da Carta 1\n\n");
+
+
+    printf("Dados Carta 2\n");
+    printf("Digite o numero estimado da populacao: ");
+    scanf("%lu", &populacao2);
+
+    printf("Digite o tamanho estimado da area em km2: ");
+    scanf("%f", &area2);
+ 
+    printf("Digite a estimativa do PIB: ");
+    scanf("%f", &pib2);
+  
+    printf("Digite o numero de pontos turisticos: ");
+    scanf("%d", &pontos2);
+    printf("\n");
+
+    printf("Fim da Carta 2, Obrigado!\n\n"); 
+ 
+    pibcap = (float)  populacao / pib;
+    printf("O pib per capta da carta 1 e de:  %.2f\n",  pibcap);
+     
+    pibcap2 = (float)  populacao2 / pib2;
+    printf("O pib per capta da carta 2 e de:  %.2f\n",  pibcap2);
+
+    densidade  = (float) populacao  / area;
+    printf("A densidade da carta 1 e de:  %.2f\n",  densidade );
+
+     
+    densidade2 = (float) populacao2 / area2;
+    printf("A densidade da carta 2 e de:  %.2f\n\n",  densidade2);
+ 
+
+    superpoder = (float) populacao + (float) pontos + area + pibcap + pib + (1.0f/densidade);
+    
+    superpoder2 = (float) populacao2 + (float) pontos2 + area2 + pibcap2 + pib2 + (1.0f/densidade2); 
+
+    vitoriasuper =  superpoder > superpoder2;
+
+
+    vitoriapopulacao = populacao > populacao2;
+    vitoriapontos = pontos > pontos2;
+    vitoriaarea = area > area2;
+    vitoriapib = pib > pib2;
+    vitoriapibcap = pibcap > pibcap2;
+    vitoriadensidade = densidade < densidade2;
+ 
+
+    printf("Comparacao das Cartas\n\n");
+    printf("Carta 1 = 1 , Carta 2 = 0\n\n");
+
+    printf("Populacao da carta 1: %lu\nPopulacao da carta 2: %lu\nVencedor: %d\n\n", populacao, populacao2, vitoriapopulacao);
+    printf("Pontos da carta 1: %d\nPontos da carta 2: %d\nVencedor: %d\n\n", pontos, pontos2, vitoriapontos);
+    printf("Area da carta 1: %f\nArea da carta 2: %f\nVencedor: %d\n\n", area, area2, vitoriaarea);
+    printf("Pib da carta 1: %f\nPib da carta 2: %f\nVencedor: %d\n\n", pib, pib2, vitoriapib);
+    printf("Pib per Capta da carta 1: %f\nPib per Capta da carta 2: %f\nVencedor: %d\n\n", pibcap, pibcap2, vitoriapibcap);
+    printf("Densidade da carta 1: %f\nDensidade da carta 2: %f\nVencedor: %d\n\n", densidade, densidade2, vitoriadensidade);
+
+    printf("(Superpoder)Soma da Carta 1: %f\n(Superpoder2)Soma da carta 2: %f\nVencedor: %d\n\n", superpoder, superpoder2, vitoriasuper);
+
+    
+ 
+    return 0;  
+}  

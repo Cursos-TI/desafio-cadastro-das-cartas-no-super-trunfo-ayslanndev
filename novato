@@ -1,0 +1,65 @@
+#include <stdio.h>
+ 
+int main() {
+    int populacao, pontos;
+    float area, pib; 
+
+    int populacao2, pontos2;
+    float area2, pib2; 
+
+    printf("Desafio Supertrunfo\n\n");
+ 
+    printf("Dados da Carta 1\n");
+    printf("Digite o numero estimado da populacao: ");
+    scanf("%d", &populacao);
+
+    printf("Digite o tamanho estimado da area em km2: ");
+    scanf("%f", &area);
+
+    printf("Digite a estimativa do PIB: ");
+    scanf("%f", &pib);
+  
+    printf("Digite o numero de pontos turisticos: ");
+    scanf("%d", &pontos);                                               
+    printf("\n");
+
+    printf("Fim da Carta 1\n\n");
+
+
+    printf("Dados Carta 2\n");
+    printf("Digite o numero estimado da populacao: ");
+    scanf("%d", &populacao2);
+
+    printf("Digite o tamanho estimado da area em km2: ");
+    scanf("%f", &area2);
+ 
+    printf("Digite a estimativa do PIB: ");
+    scanf("%f", &pib2);
+  
+    printf("Digite o numero de pontos turisticos: ");
+    scanf("%d", &pontos2);
+    printf("\n");
+
+    printf("Fim da Carta 2, Obrigado!\n\n"); 
+
+
+    printf("Conferencia das Cartas\n\n");
+ 
+    printf("Populacao Carta 1:  %d\n",  populacao);
+    printf("Populacao Carta 2:  %d\n\n",  populacao2);
+    printf("Area Carta 1:  %.3f\n",  area);
+    printf("Area Carta 2:  %.3f\n\n", area2);
+
+    printf("Estimativa do Pib da Carta 1:  %.2f\n", pib);
+    printf("Estimativa do Pib da Carta 2:  %.2f\n\n",  pib2);
+    printf("Total de Pontos Turisticos Carta 1: %d\n",  pontos);
+    printf("Total de Pontos Turisticos Carta 2: %d\n\n",  pontos2);
+
+
+    printf("Fim da Conferencia das Cartas, Obrigado!\n\n"); 
+
+  
+    return 0; 
+}
+
+ 
